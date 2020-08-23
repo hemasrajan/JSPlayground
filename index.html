@@ -4,10 +4,28 @@
         <meta charset="UTF-8">
         <title>JaveScript Playground</title>
         <link rel="stylesheet" href="main.css">
+        <script>
+          function changeBg() {
+            window.location.assign("changeBgColor/index.html")
+          }
+          function hexColor() {
+            window.location.assign("hexColor/index.html")
+          }
+          </script>
     </head>
 
     <body>
-       <button type="button" class="colorBtn">Press here to change color</button>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="topnav" id="myTopnav">
+          <a href="#changebgcolor" class="changeColor" onclick="changeBg()">Change Background</a>
+          <a href="#hexcolor" class="hexColor" onclick="hexColor()">Create Hex Color</a>
+          <a href="#quotes">Quotes</a>
+          <a href="#passthemessage">Pass The Message</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
     </body>
     
     <script src="script.js"></script>
