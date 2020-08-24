@@ -11,8 +11,14 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 equalBtn.addEventListener('click', function () {
-    let value = eval(screen.value);
-    screen.value = value;
+    if(screen.value===''){
+        alert('Input is empty');
+    }
+    else{
+        let value = eval(screen.value);
+        screen.value = value;
+    }
+    
 })
 clearBtn.addEventListener('click', function () {
     screen.value = '';
